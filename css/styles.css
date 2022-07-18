@@ -49,7 +49,6 @@ ul {
 /* оформляємо лого */
 .logo{
     color: var(--button-logo-color);
-    word-spacing: -0.3em;
 }
 
 .logo-color{color:#000000;}
