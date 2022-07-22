@@ -26,6 +26,7 @@
 body{
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    background-color: var(--primary-backgraund-color);
 }
 
 .visually-hidden {
@@ -180,6 +181,12 @@ body{
 .team {background-color:var(--about-backgraund-color);
 }
 
+.team-item{
+    background-color: var(--primary-backgraund-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-item-title {
     font-weight: 500;
     font-size: 16px;
@@ -233,6 +240,7 @@ body{
 
 /* ----------------PAGE PORTFOLIO----------------- */
 
+.main-portfolio{background-color: var(--about-backgraund-color);}
 
 .filter-btn{
     font-family: inherit;
@@ -247,7 +255,13 @@ body{
 
 .filter-btn:hover,
 .filter-btn:focus{color:var(--hero-color);
-background-color: var(--button-active-color);}
+background-color: var(--button-active-color);
+}
+
+.portfolio-item{
+    background-color:var(--primary-backgraund-color);
+    border: 1px solid #EEEEEE;
+}
 
 .portfolio-item-title{
     font-weight: 700;
@@ -263,3 +277,5 @@ background-color: var(--button-active-color);}
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+.portfolio-item{color:var(--primary-backgraund-color);}
