@@ -40,10 +40,13 @@ body{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+    margin-top: 0px;
 }
 
 .list{
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .link{
@@ -64,9 +67,20 @@ body{
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);}
+    color: var(--title-text-color);
+}
 
+.conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1215px;
+    background: #000;
+}
+
+.section{padding-top: 0px;
+padding-bottom: 94px;}
 /* ----------------LOGO----------------- */
+
 
 .logo{
     font-family: 'Raleway';
@@ -85,8 +99,10 @@ body{
 
 /* ----------------HEADER----------------- */
 
-.header {background-color: var(--primary-backgraund-color);
+.header {
+    background-color: var(--primary-backgraund-color);
 }
+
 
 .header-link {
     color: var(--title-text-color);
@@ -129,15 +145,18 @@ body{
 
 .hero {
     background-color: var(--hero-backgraund-color);
+    width: 1600px;
+    text-align: center;
 }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-color);
+    color: var(--hero-color); 
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .hero-btn {
     font-family: inherit;
@@ -148,12 +167,20 @@ body{
     background-color: var(--button-active-color);
     color: var(--hero-color);
     cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 35px;
+    min-width: 216px;
+    border-style:none;
+
 }
 
 /* ----------------FEATURES----------------- */
 
 .features {
-    background-color: var(--primary-backgraund-color);
+    background-color: 
+    var(--primary-backgraund-color);
 }
 
 .item-title {
@@ -163,22 +190,32 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .item-after-title {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 0px;
 }
 
 /* ----------------ABOUT----------------- */
+.about-title{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
 
-
+.about-item-pictures{margin-top: 0px;
+margin-bottom: 188px;}
 
 
 /* ----------------TEAM----------------- */
 
-.team {background-color:var(--about-backgraund-color);
+.team {
+    background-color:var(--about-backgraund-color);
+    margin-top: 0px;
 }
 
 .team-item{
@@ -194,6 +231,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .team-after-title {
     font-size: 16px;
@@ -201,6 +240,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 30px;
 }
 
 /* ----------------FOOTER----------------- */
@@ -240,7 +280,6 @@ body{
 
 /* ----------------PAGE PORTFOLIO----------------- */
 
-.main-portfolio{background-color: var(--about-backgraund-color);}
 
 .filter-btn{
     font-family: inherit;
@@ -251,6 +290,10 @@ body{
     letter-spacing: 0.03em;
     color: var(--button-text-color);
     background-color: var(--button-color);
+    display: inline-block;
+    margin: 6px 22px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .filter-btn:hover,
