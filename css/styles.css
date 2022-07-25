@@ -29,6 +29,14 @@ body{
     background-color: var(--primary-backgraund-color);
 }
 
+
+.header{background-color: #325632;}
+.about{background-color: #2196F3;}
+.about{background-color: yellow;}
+.team{background-color: red;}
+.features{background-color: orange;}
+
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -74,18 +82,15 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 1215px;
-    background: #000;
+   background-color: #325632;
 }
+
 
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.pading-non{
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
 
 
 /* ----------------LOGO----------------- */
@@ -101,9 +106,10 @@ body{
 .header-logo, .header-second-logo{
     margin-top: 24px;
     margin-bottom: 25px;
-    margin-left: 215px;
 }
-.header-logo{
+
+.header-logo{margin-left: 215px;}
+.header-logo, .footer-logo{
     color: var(--first-logo-color);
 }
 
@@ -164,6 +170,7 @@ body{
     background-color: var(--hero-backgraund-color);
     width: 1600px;
     text-align: center;
+    margin-top: 0px;
 }
 .hero-title {
     font-weight: 900;
@@ -197,7 +204,7 @@ body{
 
 .features {
     background-color: 
-    var(--primary-backgraund-color);
+    olivedrab
 }
 
 .item-title {
@@ -232,9 +239,14 @@ margin-bottom: 188px;}
 /* ----------------TEAM----------------- */
 
 .team {
-    background-color:var(--about-backgraund-color);
+    background-color:purple;
     margin-top: 0px;
 }
+
+.team-title{
+    padding-top: 94px;
+    padding-bottom: 0px;
+    margin-top: 0px;}
 
 .team-item{
     background-color: var(--primary-backgraund-color);
@@ -258,6 +270,7 @@ margin-bottom: 188px;}
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 
@@ -300,10 +313,6 @@ margin-bottom: 188px;}
 
 /* ----------------HEADER PORTFOLIO----------------- */
 
-.header-portfolio{
-    border: 1px solid #ECECEC;
-    border:
-}
 
 .filter-btn{
     font-family: inherit;
