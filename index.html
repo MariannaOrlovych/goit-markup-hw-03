@@ -10,21 +10,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-                <nav>
-                 <a href="/" class="header-logo logo link">Web<span class="header-second-logo logo link">Studio</span></a>     
+        <div class="container main-nav">
+             <nav class="main-nav">
+                 <a class="header-logo logo link" href="/">Web<span class="header-second-logo logo link">Studio</span></a>     
                     <ul class="header-list list">
                     <li class="header-item"><a class="header-link link navy current" href="">Студія</a></li>
                     <li class="header-item"><a class="header-link link navy" href="./portfolio.html">Портфоліо</a> </li>
                     <li class="header-item"><a class="header-link link navy" href="">Контакти</a> </li>
                     </ul>
-                </nav>
-       
-            <ul class="header-contacts-list list">
+            </nav>
+            <ul class="header-contacts-list list ">
                  <li class="contacts-item"><a href="mailto:info@devstudio.com" class="header-tel link navy">info@devstudio.com</a></li>
                  <li class="contacts-item"><a href="Tel:+380961111111" class="header-mail link navy">+38 096 111 11 11</a></li>
             </ul>
@@ -86,34 +86,41 @@
         <div class="container">
             <h2 class="team-title title">Наша команда</h2>
             <ul class="team-list list">
-
                 <li class="team-item">
                       <img src="./images/igor_demyanenko.jpg"
                         alt="Ігор Дем'яненко"
                         width="270"/>
-                      <h3 class="team-item-title">Ігор Дем'яненко</h3> 
-                      <p class="team-after-title">Product Designer</p>
+                      <div class="team-item-list">
+                         <h3 class="team-item-title">Ігор Дем'яненко</h3> 
+                         <p class="team-after-title">Product Designer</p>
+                      </div>
                 </li>
                 <li class="team-item">
-                        <img src="./images/olha_repina.jpg"
-                        alt="Ольга Рєпіна"
-                        width="270"/>
-                        <h3 class="team-item-title">Ольга Рєпіна</h3>
-                        <p class="team-after-title">Frontend Developer</p>
+                    <img src="./images/olha_repina.jpg"
+                    alt="Ольга Рєпіна"
+                    width="270"/>
+                        <div class="team-item-list">
+                            <h3 class="team-item-title">Ольга Рєпіна</h3>
+                            <p class="team-after-title">Frontend Developer</p>
+                        </div>
                 </li>
                 <li class="team-item">
-                        <img src="./images/mykola_tarasov.jpg"
-                        alt="Микола Тарасов"
-                        width="270"/>
-                        <h3 class="team-item-title">Микола Тарасов</h3>
-                        <p class="team-after-title">Marketing</p>
+                    <img src="./images/mykola_tarasov.jpg"
+                    alt="Микола Тарасов"
+                    width="270"/>
+                        <div class="team-item-list">
+                            <h3 class="team-item-title">Микола Тарасов</h3>
+                            <p class="team-after-title">Marketing</p>  
+                        </div>
                 </li>
                 <li class="team-item">
-                        <img src="./images/myhailo_ermakov.jpg"
-                        alt="Михайло Єрмаков"
-                        width="270"/>
-                        <h3 class="team-item-title">Михайло Єрмаков</h3>
-                        <p class="team-after-title">UI Designer</p>
+                    <img src="./images/myhailo_ermakov.jpg"
+                    alt="Михайло Єрмаков"
+                    width="270"/>
+                        <div class="team-item-list">
+                            <h3 class="team-item-title">Михайло Єрмаков</h3>
+                            <p class="team-after-title">UI Designer</p>
+                        </div>
                 </li>
             </ul>
         </div>
@@ -121,17 +128,17 @@
     </main>
 
     <footer class="footer">
-        <a class="foot-logo logo link" href="/"> Web<span class="logo-color-footer logo link">Studio</span>
-        </a>
-        
-        <address class="address">
-            <ul class="address-list list">
-                <li class="address-item"><a href="https://goo.gl/maps/31fkkudy4Th9jDAP7" class="address-location link">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="address-item"><a href="mailto:info@example.com" class="address-mail link">info@example.com</a> </li>
-                <li class="address-item"><a href="tel:+380991111111" class="address-tel link">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
-            
+        <div class="container">
+            <a class="footer-logo logo link" href="/"> Web<span class="logo-color-footer logo link">Studio</span>
+            </a>
+            <address class="address">
+                <ul class="address-list list">
+                    <li class="address-item"><a href="https://goo.gl/maps/31fkkudy4Th9jDAP7" class="address-location link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="address-item"><a href="mailto:info@example.com" class="address-mail link">info@example.com</a> </li>
+                    <li class="address-item"><a href="tel:+380991111111" class="address-tel link">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>            
     </footer>
 </body>
 </html>

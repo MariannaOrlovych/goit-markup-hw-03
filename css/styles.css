@@ -32,12 +32,6 @@ body{
 
 *{box-sizing: border-box;}
 
-.header{background-color: #325632;}
-.about{background-color: #2196F3;}
-.about{background-color: yellow;}
-.team{background-color: red;}
-.features{background-color: orange;}
-
 
 .visually-hidden {
     position: absolute;
@@ -117,16 +111,13 @@ address{
 /* ----------------LOGO----------------- */
 
 .logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
-.header-logo{padding-left: 215px;
-    padding-right: 0px;
 }
 
 .header-logo, .footer-logo{
@@ -143,11 +134,28 @@ address{
     background-color: var(--primary-backgraund-color);
 }
 
+.header-list{
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-list .header-item + .header-item{
+    margin-left: 50px;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
 
 .header-link {
     color: var(--title-text-color);
 }
-
+.header-list .header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .header-link:hover,
 .header-link:focus{color: var(--button-active-color);
 }
@@ -155,6 +163,17 @@ address{
 .current{
     color: var(--button-active-color);
 }
+
+.header-contacts-list{
+    display: flex;
+    margin-left: auto;
+}
+
+
+.header-contacts-list .contacts-item + .contacts-item{
+    margin-left: 30px;
+}
+
 
 .header-tel {
     font-weight: 500;
@@ -196,6 +215,8 @@ address{
     text-transform: uppercase;
     color: var(--hero-color); 
     margin-bottom: 30px;
+    text-align: center;
+    margin-left: 252px;
 }
 
 .hero-btn {
@@ -207,19 +228,18 @@ address{
     background-color: var(--button-active-color);
     color: var(--hero-color);
     cursor: pointer;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     min-width: 216px;
     border-style: none;
-    margin-top: 0px;
+    padding: 10px 32px;
 }
 
 /* ----------------FEATURES----------------- */
 
 .features {
-    background-color: 
-    olivedrab;
     padding-left: 215px;
     padding-right: 215px;
 }
@@ -261,7 +281,7 @@ margin-bottom: 188px;}
 /* ----------------TEAM----------------- */
 
 .team {
-    background-color:purple;
+    background-color:var(--about-backgraund-color);
     padding: 0px 215px 94px 215px ;
 }
 
@@ -274,6 +294,14 @@ margin-bottom: 188px;}
     background-color: var(--primary-backgraund-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-list{
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .team-item-title {
@@ -292,17 +320,26 @@ margin-bottom: 188px;}
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-top: 0px;
-    margin-bottom: 30px;
 }
+
 
 /* ----------------FOOTER----------------- */
 
 .footer {
     background-color: var(--hero-backgraund-color);
+    padding: 60px 1154px 60px 215px;
+}
+.footer-logo{
+    color: var(--button-active-color);
+}
+
+.footer-logo, .logo-color-footer{
+    padding-bottom: 20px;
 }
 .logo-color-footer {
     color: var(--hero-color);
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 
 .address{
@@ -314,6 +351,8 @@ margin-bottom: 188px;}
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hero-color);
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 
 .address-location:hover,
@@ -322,6 +361,14 @@ margin-bottom: 188px;}
 .address-mail:focus,
 .address-tel:hover, 
 .address-tel:focus{color: var(--button-active-color);}
+
+.address-mail{
+    margin-bottom: 9px;
+}
+
+.address-tel{
+    margin-top: 0px;
+}
 
 .address-mail, .address-tel {
     font-size: 14px;
@@ -335,6 +382,9 @@ margin-bottom: 188px;}
 
 /* ----------------HEADER PORTFOLIO----------------- */
 
+.filter{
+    padding: 174px 215px 94px 215px;
+}
 
 .filter-btn{
     font-family: inherit;
@@ -345,12 +395,15 @@ margin-bottom: 188px;}
     letter-spacing: 0.03em;
     color: var(--button-text-color);
     background-color: var(--button-color);
-    display: inline-block;
-    margin: 6px 22px;
+    display: block;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    padding: 6px 22px;
 }
 
+.filter-list{
+    padding-bottom: 34px;
+}
 .filter-btn:hover,
 .filter-btn:focus{color:var(--hero-color);
 background-color: var(--button-active-color);
@@ -359,6 +412,11 @@ background-color: var(--button-active-color);
 .portfolio-item{
     background-color:var(--primary-backgraund-color);
     border: 1px solid #EEEEEE;
+    width: 370px;
+}
+
+.portfolio-item-list{
+    padding: 20px 24px;
 }
 
 .portfolio-item-title{
@@ -367,6 +425,7 @@ background-color: var(--button-active-color);
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-after-title{
@@ -374,6 +433,7 @@ background-color: var(--button-active-color);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 20px;
 }
 
 .portfolio-item{color:var(--primary-backgraund-color);}
