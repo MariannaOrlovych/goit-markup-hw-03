@@ -139,8 +139,6 @@ address{
     border-top: none;
     border-right: none;
     border-left: none;
-    
-
 }
 
 .header-list{
@@ -214,7 +212,6 @@ address{
 
 .hero {
     background-color: var(--hero-backgraund-color);
-    /* padding: 200px;  */
 }
 
 .hero-title {
@@ -262,7 +259,10 @@ address{
 }
 
 .features-item{
-    width: 270px;
+    /* width: 270px; */
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
 }
 
 .features-item:not(:last-child){
@@ -303,6 +303,7 @@ address{
 .about-list{
     display: flex;
 }
+
 .about-item:not(:last-child){
     margin-right: 30px;
 }
@@ -312,7 +313,7 @@ address{
 
 .team {
     background-color:var(--about-backgraund-color);
-    padding: 0px 215px 94px 215px ;
+    padding: 0px 200px 94px 200px ;
 }
 
 .team-title{
@@ -332,13 +333,14 @@ address{
     background-color: var(--primary-backgraund-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 90px) / 4)
 }
+
 .team-item:not(:last-child){
     margin-right: 30px;
 }
 
 .team-item-list{
-    width: 270px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 5px;
@@ -446,17 +448,20 @@ address{
     color: var(--button-text-color);
     background-color: var(--button-color);
     display: block;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     padding: 6px 22px;
+    border: none;
 }
+
 
 .filter-list{
     padding-bottom: 34px;
 }
 .filter-btn:hover,
-.filter-btn:focus{color:var(--hero-color);
-background-color: var(--button-active-color);
+.filter-btn:focus{
+    color:var(--hero-color);
+    background-color: var(--button-active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .portfolio-list{
@@ -467,15 +472,10 @@ background-color: var(--button-active-color);
 .portfolio-item{
     flex-basis: calc((100% - 60px) / 3);
     background-color:var(--primary-backgraund-color);
-    /* border: 1px solid #EEEEEE; */
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-
-.card{
-    box-shadow: 1px solid #EEEEEE;
-}
 
 .portfolio-item:nth-child(3n){
     margin-right: 0px;
@@ -487,6 +487,7 @@ background-color: var(--button-active-color);
 
 .portfolio-item-list{
     padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-item-title{
