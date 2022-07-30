@@ -114,7 +114,7 @@ address{
 .logo{
     padding-top: 24px;
     padding-bottom: 25px;
-
+    display: inline-block;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
@@ -128,6 +128,8 @@ address{
 
 .header-second-logo{
     color: var(--second-logo-color);
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* ----------------HEADER----------------- */
@@ -181,7 +183,9 @@ address{
     margin-left: 30px;
 }
 
-.contacts-item{flex: flex-end;}
+.contacts-item{
+    padding-top: 32px;
+    padding-bottom: 32px;}
 
 .header-tel {
     font-weight: 500;
@@ -212,6 +216,8 @@ address{
 
 .hero {
     background-color: var(--hero-backgraund-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -248,11 +254,6 @@ address{
 }
 
 /* ----------------FEATURES----------------- */
-
-.features {
-    max-width: 1170px;
-    margin-left: 200px;
-}
 
 .features .features-list{
     display: flex;
@@ -292,8 +293,6 @@ address{
 
 .about{
     padding-top: 0;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .about-title{
@@ -313,11 +312,9 @@ address{
 
 .team {
     background-color:var(--about-backgraund-color);
-    padding: 0px 200px 94px 200px ;
 }
 
 .team-title{
-    padding-top: 94px;
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -370,24 +367,27 @@ address{
 
 .footer {
     background-color: var(--hero-backgraund-color);
-    padding: 60px 1154px 60px 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .footer-logo{
     color: var(--button-active-color);
     padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+
 }
 
-.footer-logo, .logo-color-footer{
-    padding-bottom: 20px;
-}
 .logo-color-footer {
     color: var(--hero-color);
-    margin-top: 0;
-    margin-bottom: 9px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .address{
     font-style: unset;
+    margin-top: 0px;
 }
 
 .address-location {
@@ -395,7 +395,11 @@ address{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hero-color);
-    margin-top: 0;
+    margin-top: 0px;
+}
+
+
+.address-item:not(:last-child){
     margin-bottom: 9px;
 }
 
@@ -407,7 +411,7 @@ address{
 .address-tel:focus{color: var(--button-active-color);}
 
 .address-mail{
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
 }
 
 .address-tel{
@@ -426,13 +430,11 @@ address{
 
 /* ----------------HEADER PORTFOLIO----------------- */
 
-.filter{
-    padding: 174px 215px 94px 215px;
-}
 .filter-list{
     display: flex;
     min-width: 574px;
     justify-content: center;
+    margin-bottom: 34px;
 }
 .filter-item:not(:last-child){
     margin-right: 8px;
@@ -452,10 +454,6 @@ address{
     border: none;
 }
 
-
-.filter-list{
-    padding-bottom: 34px;
-}
 .filter-btn:hover,
 .filter-btn:focus{
     color:var(--hero-color);
@@ -488,6 +486,7 @@ address{
 .portfolio-item-list{
     padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-item-title{
