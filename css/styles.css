@@ -27,7 +27,6 @@ body{
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     background-color: var(--primary-backgraund-color);
-    width: 1600px;
 }
 
 *{box-sizing: border-box;}
@@ -183,16 +182,14 @@ address{
     margin-left: 30px;
 }
 
-.contacts-item{
-    padding-top: 32px;
-    padding-bottom: 32px;}
-
 .header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-tel:hover,
@@ -205,6 +202,8 @@ address{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-mail:hover,
@@ -434,8 +433,10 @@ address{
     display: flex;
     min-width: 574px;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
+
+
 .filter-item:not(:last-child){
     margin-right: 8px;
 }
